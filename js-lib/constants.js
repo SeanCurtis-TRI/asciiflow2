@@ -4,19 +4,25 @@ export const MAX_GRID_WIDTH = 2000;
 export const MAX_GRID_HEIGHT = 600;
 
 export const SPECIAL_VALUE = '+';
-export const ALT_SPECIAL_VALUE = '^';
-export const SPECIAL_ARROW_LEFT = '<';
-export const SPECIAL_ARROW_UP = '^';
-export const SPECIAL_ARROW_RIGHT = '>';
-export const SPECIAL_ARROW_DOWN = 'v';
-export const SPECIAL_VALUES = ['+', '\u2012', '\u2013', '-', '|'];
-export const ALT_SPECIAL_VALUES = ['>', '<', '^', 'v'];
+export const ALT_SPECIAL_VALUE = '▲';
+export const SPECIAL_ARROW_LEFT = '◀';
+export const SPECIAL_ARROW_UP = '▲';
+export const SPECIAL_ARROW_RIGHT = '▶';
+export const SPECIAL_ARROW_DOWN = '▼';
+//export const ALT_SPECIAL_VALUE = '^';
+//export const SPECIAL_ARROW_LEFT = '<';
+//export const SPECIAL_ARROW_UP = '^';
+//export const SPECIAL_ARROW_RIGHT = '>';
+//export const SPECIAL_ARROW_DOWN = 'v';
+export const SPECIAL_VALUES = ['+', '\u2012', '\u2013', '-', '|', '│', '─'];
+export const ALT_SPECIAL_VALUES = ['▶', '◀', '▲', '▼'];
+//export const ALT_SPECIAL_VALUES = ['>', '<', '^', 'v'];
 export const ALL_SPECIAL_VALUES = SPECIAL_VALUES.concat(ALT_SPECIAL_VALUES);
 
 export const MAX_UNDO = 50;
 
-export const SPECIAL_LINE_H = '-';
-export const SPECIAL_LINE_V = '|';
+export const SPECIAL_LINE_H = '─';
+export const SPECIAL_LINE_V = '│';
 
 export const ERASE_CHAR = '\u2009';
 

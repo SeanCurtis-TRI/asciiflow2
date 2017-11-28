@@ -122,7 +122,8 @@ export default class State {
       if (!context.left) {
         return c.SPECIAL_ARROW_LEFT;
       }
-      if (!context.up) {
+	if (!context.up) {
+	    console.log("Up arrow", "alt special", 3);
         return c.SPECIAL_ARROW_UP;
       }
       if (!context.down) {
@@ -166,7 +167,8 @@ export default class State {
       if (context.up) {
         return c.SPECIAL_ARROW_DOWN;
       }
-      if (context.down) {
+	if (context.down) {
+	    console.log("Up arrow", "alt special", 1);
         return c.SPECIAL_ARROW_UP;
       }
       if (context.right) {

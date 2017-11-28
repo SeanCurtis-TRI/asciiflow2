@@ -29,7 +29,7 @@ export function drawLine(
     var context = state.getContext(new Vector(startX, midY));
     // Don't erase any lines that we cross.
     if (value != ' ' || context.up + context.down != 2) {
-      state.drawValueIncremental(position, value);
+	state.drawValueIncremental(position, '─');// value);// 
     }
   }
   while (startY++ < endY) {
@@ -37,7 +37,7 @@ export function drawLine(
     var context = state.getContext(new Vector(midX, startY));
     // Don't erase any lines that we cross.
     if (value != ' ' || context.left + context.right != 2) {
-      state.drawValueIncremental(position, value);
+	state.drawValueIncremental(position, '│');// value); // 
     }
   }
 
