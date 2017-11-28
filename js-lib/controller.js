@@ -5,12 +5,12 @@ import State from './state';
 import {
   DrawFunction,
   DrawBox,
-  DrawLine,
-  DrawFreeform,
   DrawErase,
-  DrawMove,
-  DrawText,
+  DrawLine,
   DrawSelect,
+  DrawText,
+  DrawMove,
+  DrawFreeform,
 } from './draw/index';
 
 
@@ -35,7 +35,8 @@ export default class Controller {
     /** @type {View} */ this.view = view;
     /** @type {State} */ this.state = state;
 
-    /** @type {DrawFunction} */ this.drawFunction = new DrawBox(state);
+    // /** @type {DrawFunction} */
+    this.drawFunction = new DrawBox(state);
 
     /** @type {number} */ this.mode = Mode.NONE;
     /** @type {Vector} */ this.dragOrigin;
